@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 30fr 1fr;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.one {
+  background-color: red;
+  grid-column: 1/4;
+  min-height: 2em;
+}
+
+.two {
+  background-color: orange;
+}
+
+.three {
+  background-color: yellow;
+  flex: 1;
+}
+
+.four {
+  background-color: green;
+}
+
+.five {
+  background-color: blue;
+  grid-column: 1/4;
+  min-height: 2em;
+}
+
+@media screen and (min-width: 576px) {
+  .flex-container {
+    flex-direction: row;
+  }
+
+  .two,
+  .four {
+    flex: 0 0 10vw;
+  }
+}

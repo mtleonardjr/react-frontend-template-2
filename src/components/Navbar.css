@@ -1,0 +1,57 @@
+* {
+  border: 1px solid black;
+}
+
+.navbar {
+  display: flex;
+  min-height: 3em;
+}
+
+.navbar > * {
+  display: flex;
+  justify-content: center;
+  min-width: 5em;
+  align-items: center;
+}
+.news,
+.contact,
+.another {
+  display: none;
+}
+
+.invs-block {
+  flex: 1;
+}
+
+.icon {
+  font-size: large;
+}
+
+.about-button {
+  font-size: x-large;
+  max-width: 5em;
+}
+
+@media only screen and (min-width: 550px) {
+  .news {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .contact {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .another {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .icon {
+    display: none;
+  }
+}
