@@ -6,7 +6,7 @@ function App() {
       Hello World
     </div>
 
-    // A five box responsive web outline made with css grid and flexbox
+    // A five box responsive web template made with css grid and flexbox
     //<HolyGrail/>
   );
 }
