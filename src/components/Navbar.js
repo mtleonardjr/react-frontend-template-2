@@ -3,14 +3,27 @@ import './Navbar.css'
 
 const Navbar = () => {
     return (
-        <div class="navbar" id="myTopnav">
-            <button class="icon">&#9776;</button>
-            <a href="#home" class="active">Home</a>
-            <a href="#news" class="news">News</a>
-            <a href="#contact" class="contact">Contact</a>
-            <a href="#another" class="another">Another</a>
-            <div class="invs-block"></div>
-            <button class="about-button">&#63;</button>
+        <div>
+            <div className="navbar">
+                <button className="icon">&#9776;</button>
+                <a href="#home" className="active">Home</a>
+                <a href="#news" className="news">News</a>
+                <a href="#contact" className="contact">Contact</a>
+                <a href="#another" className="another">Another</a>
+                <div className='drop-down'>
+                    <button className="icon">&#9776;</button>
+                    <div className='drop-down-content'>
+                        <a>1</a>
+                        <a>1</a>
+                        <a>1</a>
+                        <a>1</a>
+                    </div>
+                </div>
+                <div className="invs-block"></div>
+                <button className="about-button">&#63;</button>
+            </div>
+
+
         </div>
     )
 }
